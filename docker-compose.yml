@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  backend:
+    container_name: global-auth
+    build: .
+    image: global-auth
+    ports:
+      - "9011:9011"
+    environment:
+      - NODE_ENV=${NODE_ENV}
+      - SERVER_PORT=${SERVER_PORT}
+      - MONGO_HOST=host.docker.internal
+      - MONGO_PORT=${MONGO_PORT}
+      - MONGO_USER=${MONGO_USER}
+      - MONGO_PASSWORD=${MONGO_PASSWORD}
+      - MONGO_DB=${MONGO_DB}
+      - JWT_ADMIN_SECRET_KEY=${JWT_ADMIN_SECRET_KEY}

@@ -1,0 +1,38 @@
+{
+  "name": "global-auth",
+  "version": "1.0.0",
+  "description": "global-auth",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon index.js",
+    "start": "node index.js",
+    "lint": "standard --verbose | snazzy",
+    "lintfix": "standard --fix",
+    "test": "test"
+  },
+  "keywords": [
+    "global-auth"
+  ],
+  "author": "sholeh bakti abadi",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "dayjs": "^1.10.7",
+    "dotenv": "^14.3.2",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.2"
+  },
+  "devDependencies": {
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-n": "^14.0.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "nodemon": "^2.0.15",
+    "snazzy": "^9.0.0",
+    "standard": "^16.0.4"
+  }
+}
